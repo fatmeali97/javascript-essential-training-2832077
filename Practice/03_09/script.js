@@ -7,6 +7,29 @@
  * - Test the method by sending new values and checking the properties in the console.
  */
 
+
+
+ const dog = {
+     name: "Micho",
+     age: 2,
+     bark: "sometimes",
+     features: {
+         breed: "pomeranian",
+         fur: "long fur",
+         color: "light brown"
+     },
+     MichoBark: function(barking) {
+         this.bark = barking;
+     }
+ };
+ console.log("How often Micho barks:", dog.bark)
+
+ dog.MichoBark("everyday")
+
+ console.log("How often Micho barks:", dog.bark);
+
+//
+
 const backpack = {
   name: "Everyday Backpack",
   volume: 30,
